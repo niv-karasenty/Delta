@@ -1,3 +1,10 @@
+/*
+* Filename: max.c
+ * Description: returning the bigger number without using if, we use the fact the true in c is 1 and false is 0,
+ * so for each option we multiply the answer by 0 if it's false and 1 if true
+ * Author: Niv Karasenty
+ */
+
 #include <stdio.h>
 
 int main() {
