@@ -9,10 +9,11 @@
 
 int main() {
     int x = 79;
-    int y = 78;
-    int z = y * (y > x) + x * (x > y) + x * (x == y);
+    int y = 38;
+    int z = x + (y > x)*(y - x);
     // We multiply the bigger value by one and the smaller one by 0, that is how we get the bigger value every time
-    // I have now included the option that x and y are equal, in that case both the x>y and x<y will be 0 and we will add either of the values for the solution to be the value they are equal to
+    // To solve the problem where x = y, we will set the value to be x, if y is bigger than x we add the difference between the 2 values and thus get to y,
+    // otherwise, we leave it as x
     printf("the value of z is %d \n", z);
     return 0;
 }
